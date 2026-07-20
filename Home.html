@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="Home.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <img src="Images/website_name_and_logo.png" width="800px">
+    </header>
+
+    <nav>
+        <a href="Home.html" class="action"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="Signup.html"><i class="fa fa-fw fa-user"></i>Login/Sign-up</a>
+        <a href="Upload-bl.html"><i class="fa fa-fw fa-question"></i>Challenge</a>
+        <a href="FAQ.html" class="split"><i class="fa fa-fw fa-comments"></i>FAQ</a>
+        <a href="About.html" class="split"><i class="fa fa-fw fa-quote-left"></i>About Us</a>
+        <!-- <div class="search">
+            <input type="text" id="searchInput" placeholder="Enter">
+            <button id="searchbutton">Search</button>
+        </div> -->
+    </nav>
+    <h1>Recipes for All Tastes and Occasions</h1>
+    <h2>In this collection of tried and tested Food & Flavors recipes, you’ll find a mix of old classics, exciting fusion recipes and dishes from around the globe. There’s no shortage of delicious recipes everyone will love, all made in just six easy steps.</h2>
+    <div class="hap">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">   
+                <div class="slide first">
+                    <a href="Recipe1.html">
+                        <img src="Images/food1.jpeg" alt=""> 
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="Recipe2.html">
+                        <img src="Images/food3" alt="">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="Recipe3.html">
+                        <img src="Images/food4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="Recipe4.html">
+                        <img src="Images/food5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+               <label for="radio1" class="manual-btn"></label> 
+               <label for="radio2" class="manual-btn"></label>
+               <label for="radio3" class="manual-btn"></label>
+               <label for="radio4" class="manual-btn"></label>       
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio'+counter).checked=true;
+        counter++;
+        if(counter >4){
+            counter=1;
+        }
+    },5000);
+
+    </script>
+    
+
+    <a href="Recipe1.html">
+        <div class="polaroid">
+            <img src="Images/food1.jpeg" alt="5 Terre" width="100%">
+            <div class="container">
+                <h3>CHICKEN BIRYANI</h3>
+                <p>Click here to view the recipe</p>
+            </div>
+        </div>
+    </a>
+    <a href="Recipe2.html">
+        <div class="polaroid">
+            <img src="Images/food3" alt="5 Terre" width="100%">
+            <div class="container">
+                <h3>PESTO PASTA</h3>
+                <p>Click here to view the recipe</p>
+            </div>
+        </div>
+    </a>
+    <a href="Recipe3.html">
+        <div class="polaroid">
+            <img src="Images/food4.jpg" alt="5 Terre" width="100%">
+            <div class="container">
+                <h3>BASIC AIR FRYER HOT DOGS</h3>
+                <p>Click here to view the recipe</p>
+            </div>
+        </div>
+    </a>
+    <a href="Recipe4.html">
+        <div class="polaroid">
+            <img src="Images/food5.jpg" alt="5 Terre" width="100%">
+            <div class="container">
+                <h3>BLUEBERRY CREAM CHEESE PIE</h3>
+                <p>Click here to view the recipe</p>
+            </div>
+        </div>
+    </a>
+    <a href="Recipe5.html">
+        <div class="polaroid">
+            <img src="Images/food6.jpg" alt="5 Terre" width="100%">
+            <div class="container">
+                <h3>HONEY WALNUT SHRIMP</h3>
+                <p>Click here to view the recipe</p>
+            </div>
+        </div>
+    </a>
+    <a href="Recipe6.html">
+        <div class="polaroid">
+            <img src="Images/food7.jpg" alt="5 Terre" width="100%">
+            <div class="container">
+                <h3>MANGO LASSI</h3>
+                <p>Click here to view the recipe</p>
+            </div>
+        </div>
+    </a>
+    <footer id="section-contact">
+      <div class="main-footer">
+          <div class="links">
+              <p><a href="Home.html">Recipes</a>    <a href="About.html">About Us</a>    <a href="FAQ.html">FAQ</a></p>
+          </div>
+          <div class="apps">
+              <p>Let's be friends!!</p>
+              <a>Contact us: foodflavors141@gmail.com</a>
+              <div class="icons">
+                  <a href="#insta"><i class="fa fa-fw fa-instagram"></i></a>
+                  <a href="#fb"><i class="fa fa-fw fa-facebook"></i></a>
+                  <a href="#twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                  <a href="#whatsapp"><i class="fa fa-fw fa-whatsapp"></i></a>
+                  <a href="#telegram"><i class="fa fa-fw fa-telegram"></i></a>
+              </div>
+          </div>
+      </div>
+      </footer> 
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+  var mousePos = {};
+
+  function getRandomInt(min, max) {
+    return Math.round(Math.random() * (max - min + 1)) + min;
+  }
+
+  $(window).mousemove(function (e) {
+    mousePos.x = e.pageX;
+    mousePos.y = e.pageY;
+  });
+
+  $(window).mouseleave(function (e) {
+    mousePos.x = -1;
+    mousePos.y = -1;
+  });
+
+  var draw = setInterval(function () {
+    if (mousePos.x > 0 && mousePos.y > 0) {
+      var range = 15;
+
+      var color =
+        "background: rgb(" +
+        getRandomInt(0, 255) +
+        "," +
+        getRandomInt(0, 255) +
+        "," +
+        getRandomInt(0, 255) +
+        ");";
+
+      var sizeInt = getRandomInt(10, 30);
+      size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+
+      var left =
+        "left: " +
+        getRandomInt(mousePos.x - range - sizeInt, mousePos.x + range) +
+        "px;";
+
+      var top =
+        "top: " +
+        getRandomInt(mousePos.y - range - sizeInt, mousePos.y + range) +
+        "px;";
+
+      var style = left + top + color + size;
+      $("<div class='ball' style='" + style + "'></div>")
+        .appendTo("#wrap")
+        .one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function () {
+            $(this).remove();
+          }
+        );
+    }
+  }, 1);
+});
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Kaushan+Script&family=Rubik+Doodle+Shadow&family=Salsa&family=Satisfy&display=swap');
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Salsa', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Tilt Prism', sans-serif; */
+*{
+  font-family: 'Salsa', cursive;
+}
+h1{
+  text-align: center;
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  margin: 25px;
+  font-size: 50px;
+}
+h2{
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+  padding: 15px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/website\ background.png);
+    background-size: contain;
+  }
+  
+  header {
+    background-image: linear-gradient(to right, rgb(254, 75, 75), rgb(243, 184, 74), rgb(255, 255, 62), rgb(0, 182, 0), rgb(91, 91, 252), rgb(175, 73, 248), rgb(249, 97, 249));
+    color: #fff;
+    padding: 15px;
+    transition: 0.2s;
+    opacity: 1;
+  }
+  header img{
+    display:block;
+    margin: auto;
+  }
+  
+  nav {
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    overflow: hidden;
+    position: sticky;
+    top: 0%;
+  }
+  
+  nav a {
+    float: left;
+    display: block;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav .search{
+    float: right;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+  }
+
+  nav .search input{
+    padding: 5px;
+    width: 30%;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    background-color: #ffbebe;
+    color: dimgray;
+  }
+
+  nav .search button{
+    padding: 5px;
+    width: 30%;
+    border-radius: 0px 10px 10px 0px;
+    border:none;
+    background-color: mediumslateblue;
+    color: #ddd;
+  }
+
+
+  nav .heading{
+    float:left;
+    display: block;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 20%;
+    font-style: italic;
+  
+  }
+  nav .heading:hover{
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(70, 0, 248), 0 0 5px rgb(56, 0, 139);
+    color: #ddd;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 50px;
+  }
+  footer {
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    border-radius: 10px 10px 10px 10px;
+    color: #000000;
+    text-align: center;
+    padding:15px;
+    width: auto;
+    clear: both;
+    
+  }
+  nav a.split {
+    float: right;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+  }
+  nav a.action{
+    color: #090000;
+    background-image: linear-gradient(180deg, rgb(169, 123, 255), rgb(250, 147, 240));
+    border-radius: 10px 10px 0px 0px;
+  }
+  div.polaroid {
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin: 20px;
+    display:block;
+    float: left;
+    
+  }
+  
+  div.container {
+    text-align: center;
+  }
+  .container p{
+    padding: 0%;
+    font-family: 'Courgette', cursive;
+    color: #7d7d7d;
+  }  
+  .container h3{
+    padding: 0%;
+    color: #000000;
+  }
+  div.polaroid:hover{
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    color: #0f0f0f;
+  }
+  .links a{
+  text-decoration:none;
+  color: #0f0f0f;
+  padding: 7px;
+  text-align: center;
+}
+
+.apps .icons{
+  padding: 0px;
+}
+.apps p{
+  color: rgb(151, 1, 96);
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn{
+      border: 2px solid #a17cff;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+  }
+  .manual-btn:not(:last-child){
+      margin-right: 40px;
+  
+  }
+  .manual-btn:hover{
+      background: #a17cff;
+  }
+  #radio1:checked ~  .first{
+      margin-left: 0;
+  }
+  #radio2:checked ~  .first{
+      margin-left: -20%;
+  }
+  #radio3:checked ~  .first{
+      margin-left: -40%;
+  }
+  #radio4:checked ~  .first{
+      margin-left: -60%;
+  }
+  
+  .navigation-auto{
+      position: absolute;
+      display: flex;
+      width: 800px;
+      justify-content: center;
+      margin-top: 460px;
+  }
+  .navigation-auto div{
+      border: 2px solid #a17cff;
+      padding: 5px;
+      border-radius: 10px;
+      transition: 1s;
+  }
+  .navigation-auto div:not(:last-child){
+      margin-right: 40px;
+  
+  }
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+      background: #a17cff;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+      background: #a17cff;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+      background: #a17cff;
+  }
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+      background: #a17cff;
+  }
+  .hap{
+    margin: 20px;
+    margin-left: 26%;
+  }
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d7a9ff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0.5;
+}
+
+@keyframes implode {
+  100% {
+    transform: scale(0);
+  }
+}
+</style>
+
+</html>
