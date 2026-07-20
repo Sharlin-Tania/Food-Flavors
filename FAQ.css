@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Kaushan+Script&family=Rubik+Doodle+Shadow&family=Salsa&family=Satisfy&display=swap');
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Salsa', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Tilt Prism', sans-serif; */
+*{
+  font-family: 'Salsa', cursive;
+}
+
+h1{
+    text-align: center;
+    margin: 25px;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 50px;
+  }
+  h2{
+    text-align: left;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/website\ background.png);
+    background-size: cover;
+    background-position: fixed;
+  }
+  
+  header {
+    background-image: linear-gradient(to right, rgb(254, 75, 75), rgb(243, 184, 74), rgb(255, 255, 62), rgb(0, 182, 0), rgb(91, 91, 252), rgb(175, 73, 248), rgb(249, 97, 249));
+    color: #fff;
+    padding: 15px;
+    transition: 0.2s;
+}
+  
+  header img{
+    display:block;
+    margin: auto;
+}
+  
+  
+  nav {
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    position: sticky;
+    top: 0%;
+  }
+  
+  nav a {
+    float: left;
+    display: block;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 50px;
+  }
+  footer {
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    border-radius: 10px 10px 10px 10px;
+    color: #000000;
+    text-align: left;
+    padding:15px;
+    width: auto;
+    clear: both;
+    
+  }
+  nav a.split {
+    float: right;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+  }
+  nav a.action{
+    color: #090000;
+    background-image: linear-gradient(180deg, rgb(247, 113, 113), rgb(250, 232, 151));
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  *{
+    margin:0; padding:0; 
+  }
+  
+  .container{
+    margin:20px ;
+    width: auto;
+  }
+  
+  .container .heading{
+    text-align: center;
+    font-size: 30px;
+    padding:20px;
+    margin-bottom: 20px;
+  }
+  
+  .container .accordion-container{
+    padding:0 20px;
+  }
+  
+  .container .accordion-container .accordion{
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .container .accordion-container .accordion.active .accordion-heading{
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+  }
+  
+  .container .accordion-container .accordion.active .accordion-heading h3{
+    color:#000000;
+  }
+  
+  .container .accordion-container .accordion.active .accordion-heading i{
+    color:#fff;
+    transform: rotate(180deg);
+    transition: transform .2s .1s;
+  }
+  
+  .container .accordion-container .accordion.active .accordion-content{
+    display: block;
+    font-family: 'Satisfy', cursive;
+    font-size: larger;
+  }
+  
+  .container .accordion-container .accordion .accordion-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    background: #e3c5ff;
+    /* border:2px solid #000; */
+    padding:15px 20px;
+    
+  }
+  
+  .container .accordion-container .accordion .accordion-heading h3{
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+  }
+  
+  .container .accordion-container .accordion .accordion-heading i{
+    font-size: 25px;;
+  }
+  
+  .container .accordion-container .accordion .accordion-content{
+    padding:15px 20px;
+    /* border:2px solid #000; */
+    font-size: 15px;
+    background: #fff;
+    border-top: 0;
+    display: none;
+    animation: animate .2s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+  }
+  
+  @keyframes animate {
+    0%{
+      transform: scaleY(0);
+    }
+  }
+  .main-footer{
+    display:grid;
+    grid-template-columns:1fr 5fr;
+    column-gap: 10px;
+    margin-top: 20px;
+  }
+  .links p {
+    color:#000;
+    padding: 10px;
+    text-align: left;
+  }
+  .links a{
+    text-decoration:none;
+    color: #000;
+  }
+  .links{
+    border-right: 2px solid #000000;
+  }
+  .apps{
+    border-left:2px solid #000000;
+  }
+  .apps p{
+    padding: 10px 25px;
+  }
+  .apps .icons{
+    padding: 0px 25px;
+  }
+ 

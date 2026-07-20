@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- <link rel="stylesheet" href="About.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body ontouchstart="">
+    <div id="wrap">
+    <header>
+        <img src="Images/website_name_and_logo.png" width="800px">
+    </header>
+
+    <nav>
+        <a href="Home1.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <!-- <a href="#Login/Sign-up"><i class="fa fa-fw fa-user"></i>Login/Sign-up</a> -->
+        <a href="Upload.html"><i class="fa fa-fw fa-question"></i>Challenge</a>
+        <a href="FAQ1.html" class="split"><i class="fa fa-fw fa-comments"></i>FAQ</a>
+        <a href="About1.html" class="split action"><i class="fa fa-fw fa-quote-left"></i>About Us</a>
+    </nav>
+
+    <h1>GET TO KNOW US!!!</h1>
+    <div class="message">
+        <h2>WHO WE ARE</h2>
+        <P>Food & Flavors is here to help you cook delicious meals with less stress and more joy. We offer recipes and cooking advice for home cooks, by home cooks. Helping create “kitchen wins” is what we’re all about.
+            Food & Flavors was founded in 2003 as a home cooking blog to record her favorite family recipes. Today, Food & Flavors has grown into a trusted resource for home cooks with more than 3,000 tested recipes, guides, and meal plans, drawing over 15 million readers each month from around the world. We’re supported by a diverse group of recipe developers, food writers, recipe and product testers, photographers, and other creative professionals.</P>
+        <h2>DIVERSITY</h2>
+        <p>Everyone is welcome at the Food & Flavors table: people of all races, religions, genders, sexual orientations, ages, backgrounds, and abilities. We strive to be a resource for every home cook, and we consciously work to make this inclusion felt in every part of the site, from the individuals we hire to the recipes we share.</p>
+
+        <h2>GALLERY</h2>
+
+        <!-- <div class="gallery">
+            <div class="gallery-container">
+                <img src="Images/food1.jpeg" width="25%" alt="cook" >
+                <img src="Images/food3" width="25%" alt="cook" >
+                <img src="Images/food4.jpg" width="25%" alt="cook" >
+                <img src="Images/food5.jpg" width="25%" alt="cook" >
+                <img src="Images/food3" width="25%" alt="cook" >
+                <img src="Images/food6.jpg" width="25%" alt="cook" >
+                <img src="Images/food7.jpg" width="25%" alt="cook" >
+                <img src="Images/food6.jpg" width="25%" alt="cook" >
+                <img src="Images/food5.jpg" width="25%" alt="cook" >
+            </div>
+        </div> -->
+        <main >
+          <div id="gallery">
+            <figure>
+                <img src="Images/food3" width="100%" >
+            </figure>
+            <figure>
+                <img src="Images/food1.jpeg" width="100%" >
+            </figure>
+            <figure>
+                <img src="Images/food4.jpg" width="100%" >
+            </figure>
+            <figure>
+                <img src="Images/food5.jpg" width="100%">
+            </figure>
+            <figure >
+              <img src="Images/food6.jpg" width="100%" >
+            </figure>
+            <figure >
+              <img src="Images/food7.jpg" width="100%" >
+            </figure>
+            <figure>
+              <img src="Images/Delicious Dal Tadka recipe of yellow lentils with spices, herbs and chili pepper close-up in a bowl_ horizontal (1).jfif" width="100%">
+              
+            </figure>
+            <figure>
+              <img src="Images/Delicious food_ deep-fried chicken wings in breadcrumbs and potato close-up_ horizontal.jfif" width="100%">
+            </figure>
+            <figure >
+              <img src="Images/video 2.gif" width="100%" >
+            </figure>
+            <figure >
+              <img src="Images/a7ef24f9fa8d53029bbf1d3596bb1a35.jpg" width="100%" >
+            </figure>
+            <figure >
+              <img src="Images/food 8.jpg" width="100%" >
+            </figure>
+            <figure >
+              <img src="Images/food 9.jpg" width="100%" >
+            </figure> 
+          </div>
+        </main>
+    </div>
+   <footer id="section-contact">
+    <div class="main-footer">
+        <div class="links">
+            <p><a href="Home1.html">Recipes</a>    <a href="About1.html">About Us</a>    <a href="FAQ1.html">FAQ</a></p>
+        </div>
+        <div class="apps">
+            <p>Let's be friends!!</p>
+            <a>Contact us: foodflavors141@gmail.com</a>
+            <div class="icons">
+                <a href="#insta"><i class="fa fa-fw fa-instagram"></i></a>
+                <a href="#fb"><i class="fa fa-fw fa-facebook"></i></a>
+                <a href="#twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                <a href="#whatsapp"><i class="fa fa-fw fa-whatsapp"></i></a>
+                <a href="#telegram"><i class="fa fa-fw fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+    </footer> 
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+  var mousePos = {};
+
+  function getRandomInt(min, max) {
+    return Math.round(Math.random() * (max - min + 1)) + min;
+  }
+
+  $(window).mousemove(function (e) {
+    mousePos.x = e.pageX;
+    mousePos.y = e.pageY;
+  });
+
+  $(window).mouseleave(function (e) {
+    mousePos.x = -1;
+    mousePos.y = -1;
+  });
+
+  var draw = setInterval(function () {
+    if (mousePos.x > 0 && mousePos.y > 0) {
+      var range = 15;
+
+      var color =
+        "background: rgb(" +
+        getRandomInt(0, 255) +
+        "," +
+        getRandomInt(0, 255) +
+        "," +
+        getRandomInt(0, 255) +
+        ");";
+
+      var sizeInt = getRandomInt(10, 30);
+      size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+
+      var left =
+        "left: " +
+        getRandomInt(mousePos.x - range - sizeInt, mousePos.x + range) +
+        "px;";
+
+      var top =
+        "top: " +
+        getRandomInt(mousePos.y - range - sizeInt, mousePos.y + range) +
+        "px;";
+
+      var style = left + top + color + size;
+      $("<div class='ball' style='" + style + "'></div>")
+        .appendTo("#wrap")
+        .one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function () {
+            $(this).remove();
+          }
+        );
+    }
+  }, 1);
+});
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Kaushan+Script&family=Rubik+Doodle+Shadow&family=Salsa&family=Satisfy&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Salsa', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Tilt Prism', sans-serif; */
+*{
+  font-family: 'Salsa', cursive;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  margin: 25px;
+  font-size: 50px;
+}
+h2{
+  text-align: left;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 35px;
+}
+div.message{
+  margin: 80px;
+  text-align: center;
+  margin-top: 100px;
+}
+.message p{
+  text-align: justify;
+  font-size: 25px;
+  font-family: 'Satisfy', cursive;
+  line-height: 1.6;
+  color: #555;
+
+  
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(images/website\ background.png);
+  background-size: contain;
+}
+
+header {
+  background-image: linear-gradient(to right, rgb(254, 75, 75), rgb(243, 184, 74), rgb(255, 255, 62), rgb(0, 182, 0), rgb(91, 91, 252), rgb(175, 73, 248), rgb(249, 97, 249));
+  color: #fff;
+  padding: 15px;
+  transition: 0.2s;
+}
+header img{
+  display:block;
+  margin: auto;
+}
+
+nav {
+  background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+  position: sticky;
+  top: 0%;
+}
+nav .heading{
+  float:left;
+  display: block;
+  color: rgb(17, 16, 16);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 20%;
+  font-style: italic;
+
+}
+nav .heading:hover{
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(70, 0, 248), 0 0 5px rgb(56, 0, 139);
+  color: #ddd;
+ 
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: rgb(17, 16, 16);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 50px;
+}
+
+h2 {
+  color: #333;
+}
+
+
+
+footer {
+  background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+  border-radius: 10px 10px 10px 10px;
+  color: #000000;
+  text-align:center;
+  padding:15px;
+  width: auto;
+  clear: both;
+  
+}
+
+/* Gallery styles */
+/* .gallery {
+  display: table;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery img:hover{
+  transform: scale(1.1);
+  overflow: hidden; */
+/* } */
+nav a.split {
+  float: right;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+nav a.action{
+  color: #090000;
+  background-image: linear-gradient(180deg, rgb(247, 113, 113), rgb(250, 232, 151));
+  border-radius: 10px 10px 0px 0px;
+}
+
+.links a{
+  text-decoration:none;
+  color: #0f0f0f;
+  padding: 7px;
+  text-align: center;
+}
+
+.apps .icons{
+  padding: 0px;
+}
+.apps p{
+  color: rgb(151, 1, 96);
+}
+
+
+/* .gallery .gallery-container{
+  columns: 5rem 1;
+  gap:1.4rem;
+}
+.gallery .gallery-container img{
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.gallery .gallery-container img:hover{
+  transform: scale(1.01);
+} */
+
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0.5;
+}
+
+@keyframes implode {
+  100% {
+    transform: scale(0);
+  }
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0.5;
+}
+
+@keyframes implode {
+  100% {
+    transform: scale(0);
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+* {
+  box-sizing: border-box;
+}
+/* html,
+body {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+} */
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300vw;
+  min-height: 10vh;
+  overflow-x: hidden;
+}
+/* p {
+  line-height: 1;
+} */
+/* a {
+  color: royalblue;
+  text-decoration: none;
+} */
+#gallery {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  max-width: 80vw;
+  padding: 20px;
+  -webkit-perspective: 0;
+  perspective: 0;
+}
+#gallery figure:nth-child(7n) {
+  --duration: 1s;
+  --pin-color: #0ff;
+}
+#gallery figure:nth-child(7n + 1) {
+  --duration: 1.8s;
+  --pin-color: #dbdb2b;
+}
+#gallery figure:nth-child(7n + 2) {
+  --duration: 1.3s;
+  --pin-color: #00f077;
+}
+#gallery figure:nth-child(7n + 3) {
+  --duration: 1.5s;
+  --pin-color: #ea4597;
+}
+#gallery figure:nth-child(7n + 4) {
+  --duration: 1.1s;
+  --pin-color: #6f9ac6;
+}
+#gallery figure:nth-child(7n + 5) {
+  --duration: 1.6s;
+  --pin-color: #9452d7;
+}
+#gallery figure:nth-child(7n + 6) {
+  --duration: 1.2s;
+  --pin-color: #ff7f00;
+}
+#gallery figure:nth-child(3n) {
+  --angle: 3deg;
+}
+#gallery figure:nth-child(3n + 1) {
+  --angle: -3.3deg;
+}
+#gallery figure:nth-child(3n + 2) {
+  --angle: 2.4deg;
+}
+#gallery figure:nth-child(odd) {
+  --direction: alternate;
+}
+#gallery figure:nth-child(even) {
+  --direction: alternate-reverse;
+}
+#gallery figure {
+  --angle: 3deg;
+  --count: 5;
+  --duration: 1s;
+  --delay: calc(-0.5 * var(--duration));
+  --direction: alternate;
+  --pin-color: red;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 /1;
+  text-align: center;
+  /* background-color: rgb(197, 29, 29); */
+  background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+  /* background-image: url("https://images.unsplash.com/photo-1603484477859-abe6a73f9366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTM0NTk4ODN8&ixlib=rb-4.0.3&q=100&w=800"); */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  filter: brightness(125%);
+
+  transform-origin: center 0.22rem;
+  will-change: transform;
+  break-inside: avoid;
+  overflow: hidden;
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#gallery figure.active {
+  animation-duration: var(--duration), 1.5s;
+  animation-delay: var(--delay),
+    calc(var(--delay) + var(--duration) * var(--count));
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: var(--count), 1;
+  animation-direction: var(--direction), normal;
+  animation-fill-mode: both;
+  animation-name: swing, swingEnd;
+}
+#gallery figure:after {
+  position: absolute;
+  top: 0.22rem;
+  left: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  content: "";
+  background: var(--pin-color);
+  border-radius: 50%;
+  box-shadow: -0.1rem -0.1rem 0.3rem 0.02rem rgba(0, 0, 0, 0.7) inset;
+  filter: drop-shadow(0.25rem 0.13rem 0.15rem rgba(0, 0, 0, 0.7));
+  transform: translateZ(0);
+}
+figure figcaption {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #888;
+  line-height: 1;
+  /*
+  background: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(3px);
+  
+  text-stroke: 0.5px rgba(20, 20, 20, 0.5);
+	-webkit-text-stroke: 0.5px rgba(20, 20, 20, 0.5);
+  */
+  filter: invert(1);
+  mix-blend-mode: difference;
+  transform: translateZ(0);
+}
+figure h2 {
+  color: royalblue;
+  font-size: 24px;
+}
+figure p {
+  font-size: 17px;
+}
+figure small {
+  font-size: 15px;
+}
+figure svg {
+  width: 10px;
+}
+@keyframes swing {
+  0% {
+    transform: rotate3d(0, 0, 1, calc(-1 * var(--angle)));
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, var(--angle));
+  }
+}
+@keyframes swingEnd {
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@media (min-width: 800px) {
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+
+</style>
+<script>
+/*!
+Swaying photo gallery - hover event
+Created on AUGUST 29, 2023
+Copyright (c) 2023 by Wakana Y.K. (https://codepen.io/wakana-k/pen/oNJxbPw)
+*/
+/*
+Related works : 
+Portforio design @wakana-k - https://codepen.io/wakana-k/pen/BaxKKvE
+Swaying photo gallery - scroll event @wakana-k - https://codepen.io/wakana-k/pen/WNLrWMm
+*/
+"use strict";
+(function () {
+  window.onload = () => {
+    function split(str) {
+      let array = str.split(",");
+      array[0] = parseFloat(array[0]);
+      array[1] = parseFloat(array[1]);
+      return array;
+    }
+    function animStart(evt) {
+      let elem = evt.target;
+      if (elem.classList && elem.classList.contains("active") == false) {
+        elem.classList.add("active");
+        let durations = split(
+          window.getComputedStyle(elem).getPropertyValue("animation-duration")
+        );
+        let delays = split(
+          window.getComputedStyle(elem).getPropertyValue("animation-delay")
+        );
+
+        let time = (delays[1] + durations[1]) * 1000;
+        setTimeout(() => {
+          animEnd(elem);
+        }, time);
+      }
+    }
+    function animEnd(elem) {
+      elem.classList.remove("active");
+      elem.offsetWidth;
+    }
+    function init() {
+      const items = document.querySelectorAll("#gallery figure");
+      items.forEach((item, index) => {
+        //
+        item.addEventListener("pointerenter", animStart);
+        item.addEventListener("pointerdown", animStart);
+        item.addEventListener("pointermove", animStart);
+        //
+        let img = item.dataset.img;
+        if (img) {
+          var backgroundImage = window
+            .getComputedStyle(item)
+            .getPropertyValue("background-image");
+          item.style.backgroundImage =
+            "url( " + img + " )" + "," + backgroundImage;
+        } else {
+          item.style.backgroundBlendMode = "none";
+          let e = new Event("pointerenter");
+          item.dispatchEvent(e);
+        }
+      });
+    }
+    init();
+  };
+})();
+
+</script>
+</html>
+
+
