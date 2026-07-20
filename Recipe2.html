@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+    <title>COOK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/website_name_and_logo.png" width="800px">
+        <div class="previous">
+          <a href="Home.html" class="previous round"><i class="fa fa-fw fa-backward"></i></a>
+        </div>
+    </header>
+    <h1>PESTO PASTA</h1>
+    <div class="recipeimg">
+      <img src="Images/food3" width="100%">
+    </div>
+    <div class="recipe">
+      <div class="Ingredients">
+        <div class="items">
+          <h2>INGREDIENTS</h2>
+          <ul>
+            <li>1 (16 ounce) package pasta</li>
+            <li>2 tablespoons olive oil</li>
+            <li>½ cup chopped onion</li>
+            <li>2 ½ tablespoons pesto</li>
+            <li>salt to taste</li>
+            <li>ground black pepper to taste</li>
+            <li>2 tablespoons grated Parmesan cheese</li>
+          </ul>
+        </div>
+      </div>
+      <div class="Procedure">
+        <h1>DIRECTIONS</h1>
+        <h2>Step 1</h2>
+        <p>Fill a large pot with lightly salted water and bring to a rolling boil. Stir in pasta and return to a boil. Cook pasta uncovered, stirring occasionally, until tender yet firm to the bite, about 8 to 10 minutes. Drain and transfer into a large bowl.</p>
+        <h2>Step 2</h2>
+        <p>Meanwhile, heat oil in a frying pan over medium-low heat. Add onion; cook and stir until softened, about 3 minutes. Stir in pesto, salt, and pepper until warmed through.</p>
+        <h2>Step 3</h2>
+        <p>Add pesto mixture to hot pasta; stir in grated cheese and toss well to coat.</p>
+      </div>
+    </div>
+
+    <footer id="section-contact">
+      <div class="main-footer">
+          <div class="links">
+              <p><a href="Home.html">Recipes</a>    <a href="About.html">About Us</a>    <a href="FAQ.html">FAQ</a></p>
+          </div>
+          <div class="apps">
+              <p>Let's be friends!!</p>
+              <a>Contact us: foodflavors141@gmail.com</a>
+              <div class="icons">
+                  <a href="#insta"><i class="fa fa-fw fa-instagram"></i></a>
+                  <a href="#fb"><i class="fa fa-fw fa-facebook"></i></a>
+                  <a href="#twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                  <a href="#whatsapp"><i class="fa fa-fw fa-whatsapp"></i></a>
+                  <a href="#telegram"><i class="fa fa-fw fa-telegram"></i></a>
+              </div>
+          </div>
+      </div>
+      </footer> 
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Kaushan+Script&family=Rubik+Doodle+Shadow&family=Salsa&family=Satisfy&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Salsa', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Tilt Prism', sans-serif; */
+*{
+  font-family: 'Salsa', cursive;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  margin: 25px;
+  font-size: 50px;
+}
+  .Procedure h1{
+    font-family: 'Salsa', cursive;
+  }
+  .Ingredients h2{
+    text-align: center;
+  }
+  .Procedure h2{
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/website\ background.png);
+    background-size: contain;
+    
+  }
+  ul{
+    list-style-type:"\1F96C";
+    font-size: 17px;
+  }
+  ul li{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+  }
+  .items{
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .Ingredients{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  .Procedure{
+    width: 100%;
+    font-size: larger;
+    margin-top: 10px;
+    
+  }
+  .recipe{
+    display:grid;
+    grid-template-columns:1fr 5fr;
+    column-gap: 10px;
+    margin-top: 20px;
+
+  }
+  .recipeimg img{
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .recipeimg{
+    margin: 10px;
+  }
+
+header {
+    background-image: linear-gradient(to right, rgb(254, 75, 75), rgb(243, 184, 74), rgb(255, 255, 62), rgb(0, 182, 0), rgb(91, 91, 252), rgb(175, 73, 248), rgb(249, 97, 249));
+    color: #fff;
+    padding: 15px;
+    transition: 0.2s;
+}
+header img{
+    display:block;
+    margin: auto;
+}
+  nav {
+    background-color: #ff7575;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    position: sticky;
+    top: 0%;
+  }
+  
+  nav a {
+    float: left;
+    display: block;
+    color: rgb(17, 16, 16);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 50px;
+  }
+  footer {
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    border-radius: 10px 10px 10px 10px;
+    color: #000000;
+    text-align: center;
+    padding:15px;
+    width: auto;
+    clear: both;  
+  }
+  nav a.split {
+    float: right;
+    color: white;
+    border-radius: 50px;
+  }
+  nav a.action{
+    color: #444;
+    background-color: aqua;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .previous a {
+  display: inline-block;
+}
+
+.previous a:hover {
+  background-color: #e96ae0;
+  color: black;
+}
+
+.previous {
+  color:#000000;
+}
+.round {
+  border-radius: 50px 50px 50px 50px;
+  background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+  margin: 10px;
+  padding: 20px;
+}
+.links a{
+  text-decoration:none;
+  color: #0f0f0f;
+  padding: 7px;
+  text-align: center;
+}
+
+.apps .icons{
+  padding: 0px;
+}
+.apps p{
+  color: rgb(151, 1, 96);
+}
+</style>
