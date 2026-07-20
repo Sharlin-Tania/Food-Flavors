@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="wrap">
+        <header>
+            <img src="Images/website_name_and_logo.png" width="800px">
+        </header>
+    
+        <nav>
+            <a href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="Signup.html"><i class="fa fa-fw fa-user"></i>Login/Sign-up</a>
+            <a href="Upload-bl.html" class="action"><i class="fa fa-fw fa-question"></i>Challenge</a>
+            <a href="FAQ.html" class="split"><i class="fa fa-fw fa-comments"></i>FAQ</a>
+            <a href="About.html" class="split"><i class="fa fa-fw fa-quote-left"></i>About Us</a>
+        </nav>
+
+        <div class="about">
+          <!-- ------------------------------------ -->
+          <div class="upper">
+            <div class="logo">
+              
+              <div class="image">
+                <div class="camp">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <h1>READY FOR THE CHALLENGE!</h1>
+              <p>
+                This is a monthly challenge. You can get the recipe from this page and try that recipe at home then upload a video of your dish below. The best dish will be given a prize!!!!
+              </p>
+              <a href="Recipe2.html">GET THE RECIPE</a>
+            </div>
+          </div>
+          
+          
+        </div>
+
+    <!-- <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Upload Video</button>
+    </form> -->
+    <div class="login-button">
+      <a href="Signup.html">Please Sign-up/Login to Upload</a>
+    </div>
+    <footer id="section-contact">
+      <div class="main-footer">
+          <div class="links">
+              <p><a href="Home.html">Recipes</a>    <a href="About.html">About Us</a>    <a href="FAQ.html">FAQ</a></p>
+          </div>
+          <div class="apps">
+              <p>Let's be friends!!</p>
+              <a>Contact us: foodflavors141@gmail.com</a>
+              <div class="icons">
+                  <a href="#insta"><i class="fa fa-fw fa-instagram"></i></a>
+                  <a href="#fb"><i class="fa fa-fw fa-facebook"></i></a>
+                  <a href="#twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                  <a href="#whatsapp"><i class="fa fa-fw fa-whatsapp"></i></a>
+                  <a href="#telegram"><i class="fa fa-fw fa-telegram"></i></a>
+              </div>
+          </div>
+      </div>
+      </footer> 
+  </div>
+</body>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Kaushan+Script&family=Rubik+Doodle+Shadow&family=Salsa&family=Satisfy&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Salsa', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Tilt Prism', sans-serif; */
+*{
+  font-family: 'Salsa', cursive;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  margin: 25px;
+  font-size: 50px;
+}
+h2{
+  text-align: left;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 35px;
+}
+div.message{
+  margin: 80px;
+  text-align: center;
+  margin-top: 100px;
+}
+.info p{
+  font-size: 30px;
+  margin:0;
+}
+.info a{
+  text-decoration: none;
+  display: block;
+  color: aliceblue;
+  padding: 10px;
+  background-color: #1b1725;
+  width: 40%;
+  margin: 15px;
+  text-align: center;
+  margin-left: 30%;
+  border-radius: 10px;
+}
+.message p{
+  text-align: justify;
+  font-size: 25px;
+  font-family: 'Satisfy', cursive;
+  color: #333;
+
+  
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(images/website\ background.png);
+  background-size:cover;
+}
+
+header {
+  background-image: linear-gradient(to right, rgb(254, 75, 75), rgb(243, 184, 74), rgb(255, 255, 62), rgb(0, 182, 0), rgb(91, 91, 252), rgb(175, 73, 248), rgb(249, 97, 249));
+  color: #fff;
+  padding: 15px;
+  transition: 0.2s;
+}
+header img{
+  display:block;
+  margin: auto;
+}
+
+nav {
+  background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+  position: sticky;
+  top: 0%;
+}
+nav .heading{
+  float:left;
+  display: block;
+  color: rgb(17, 16, 16);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 20%;
+  font-style: italic;
+
+}
+nav .heading:hover{
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(70, 0, 248), 0 0 5px rgb(56, 0, 139);
+  color: #ddd;
+ 
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: rgb(17, 16, 16);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 50px;
+}
+nav a.split {
+  float: right;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+nav a.action{
+  color: #090000;
+  background-image: linear-gradient(180deg, rgb(169, 123, 255), rgb(250, 147, 240));
+  border-radius: 10px 10px 0px 0px;
+}
+form input{
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 100px;
+  margin:20px;
+}
+form button{
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+    margin-left: 25%;
+    color:#090000
+}
+form {
+    /* margin:100px; */
+    display: block;
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    padding: 30px;
+    position: absolute;
+    margin-left: 35%;
+    border-radius: 50px ;
+    
+}
+.about {
+  padding: 2rem 0rem;
+  margin: 10px;
+  margin-top: 20px;
+}
+.upper,
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.image {
+  /* background-image: url(Images/WhatsApp\ Video\ 2024-03-09\ at\ 13.53.52_72bd2b1f.mp4); */
+  background-image: url(Images/Video.gif);
+  background-size: cover;
+  width: 36rem;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+.camp {
+  position: relative;
+  top: 2.6rem;
+  left: 7.3rem;
+}
+#tent {
+  width: 30%;
+}
+#fire {
+  width: 15%;
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
+.info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem 2rem;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  padding-top: 3.5rem;
+}
+.slider img {
+  width: 36rem;
+  height: 28rem;
+  border-radius: 50%;
+}
+/* ------------------------------------ */
+@media (max-width: 768px) {
+  .upper {
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+  #logo {
+    width: 50%;
+  }
+  .image {
+    width: 18rem;
+    height: 14rem;
+  }
+  .camp {
+    top: 1.2rem;
+    left: 3rem;
+  }
+  .info {
+    width: 85%;
+    padding: 0rem 1.7rem;
+  }
+  .info h1 {
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+  .slider {
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .slider img {
+    width: 18rem;
+    height: 14rem;
+  }
+  .lower {
+    flex-direction: column-reverse;
+  }
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0.5;
+}
+
+@keyframes implode {
+  100% {
+    transform: scale(0);
+  }
+}
+footer {
+    background-image: linear-gradient(to right, rgb(252, 194, 194), rgb(244, 225, 189), rgb(251, 251, 195), rgb(182, 249, 182), rgb(192, 192, 254), rgb(219, 176, 249), rgb(251, 179, 251));
+    border-radius: 10px 10px 10px 10px;
+    color: #000000;
+    text-align: center;
+    padding:15px;
+    width: auto;
+    clear: both;
+    margin-top: 150px;
+    position:relative;
+    
+  }
+  .links a{
+  text-decoration:none;
+  color: #0f0f0f;
+  padding: 7px;
+  text-align: center;
+}
+
+.apps .icons{
+  padding: 0px;
+}
+.apps p{
+  color: rgb(151, 1, 96);
+}
+  .login-button a{
+    text-decoration: none;
+  display: block;
+  color: aliceblue;
+  padding: 10px;
+  background-color: #1b1725;
+  width: 60%;
+  margin: 25px;
+  text-align: center;
+  margin-left: 20%;
+  border-radius: 10px;
+  font-size: 50px;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+  var mousePos = {};
+
+  function getRandomInt(min, max) {
+    return Math.round(Math.random() * (max - min + 1)) + min;
+  }
+
+  $(window).mousemove(function (e) {
+    mousePos.x = e.pageX;
+    mousePos.y = e.pageY;
+  });
+
+  $(window).mouseleave(function (e) {
+    mousePos.x = -1;
+    mousePos.y = -1;
+  });
+
+  var draw = setInterval(function () {
+    if (mousePos.x > 0 && mousePos.y > 0) {
+      var range = 15;
+
+      var color =
+        "background: rgb(" +
+        getRandomInt(0, 255) +
+        "," +
+        getRandomInt(0, 255) +
+        "," +
+        getRandomInt(0, 255) +
+        ");";
+
+      var sizeInt = getRandomInt(10, 30);
+      size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+
+      var left =
+        "left: " +
+        getRandomInt(mousePos.x - range - sizeInt, mousePos.x + range) +
+        "px;";
+
+      var top =
+        "top: " +
+        getRandomInt(mousePos.y - range - sizeInt, mousePos.y + range) +
+        "px;";
+
+      var style = left + top + color + size;
+      $("<div class='ball' style='" + style + "'></div>")
+        .appendTo("#wrap")
+        .one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function () {
+            $(this).remove();
+          }
+        );
+    }
+  }, 1);
+});
+</script>
+</html>
